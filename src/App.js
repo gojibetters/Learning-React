@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './index.css'
+import Primeiro from './components/Primeiro'
+import Comparametro from './components/Comparametro'
+import Fragmento from './components/Fragmento'
+import Cartao from './components/modelo/Cartao'
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <div>
+        <h1> Fundamentos React </h1>
+        <div className="Cards">
+          <Cartao titulo="Primeiro componente React">
+            <Primeiro />
+          </Cartao>
 
-export default App;
+          <Cartao titulo="Primeiro componente com props">
+            <Comparametro titulo="Hoje é quarta-feira" subtitulo="03/08/2022" />
+          </Cartao>
+
+          <Cartao titulo="Primeiro componente com props">
+            <Comparametro titulo="Aula de React" subtitulo="Parametros" />
+          </Cartao>
+
+          <Cartao titulo="Primeiro componente com props">
+            <Comparametro titulo="Titulo teste" />
+          </Cartao>
+
+          <Cartao titulo="Primeiro componente com props">
+            <Fragmento />
+          </Cartao>
+        </div>
+      </div>
+    </div>
+  )
+}
