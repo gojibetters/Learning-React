@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  min-width: 200px;
+  background-color: aquamarine;
+  border-radius: 5px;
+  border: 3px solid black;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 5px 10px;
+  color: black;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;
+  flex: 1;
+  margin: 5px;
+}
