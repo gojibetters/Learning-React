@@ -1,0 +1,25 @@
+:root {
+  --color1: #070705;
+  --color2: #3e4b51;
+  --color3: #6f737e;
+  --color4: #89a09a;
+  --color5: #c1c0ae;
+}
+
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--color1);
+  color: white;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bolder;
+  margin: 4px;
+}
