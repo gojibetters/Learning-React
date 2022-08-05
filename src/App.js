@@ -1,11 +1,14 @@
 import React from 'react'
-import './index.css'
-import './app.css'
+import './css/index.css'
+import './css/app.css'
 import Cartao from './components/modelo/Cartao'
 import Comparametro from './components/Comparametro'
 import Fragmento from './components/Fragmento'
 import Primeiro from './components/Primeiro'
 import Numeros from './components/Numeros'
+import Foto from './components/Foto'
+import Imagem from './images/06_113.jpg'
+import ListaFuncionarios from './components/ListaFuncionarios'
 
 export default function App() {
   return (
@@ -14,6 +17,14 @@ export default function App() {
       <div className="Cards">
         <Cartao titulo="Primeiro componente React">
           <Primeiro />
+        </Cartao>
+
+        <Cartao titulo="Lista" color="grey">
+          <ListaFuncionarios />
+        </Cartao>
+
+        <Cartao titulo="Imagem em React" color="#00ffff">
+          <Foto img={Imagem} />
         </Cartao>
 
         <Cartao titulo="Números aleatórios" color="#4050ef">
