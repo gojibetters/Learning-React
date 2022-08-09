@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './css/index.css'
 import './css/app.css'
 import Cartao from './components/modelo/Cartao'
@@ -9,12 +9,24 @@ import Numeros from './components/Numeros'
 import Foto from './components/Foto'
 import Imagem from './images/06_113.jpg'
 import ListaFuncionarios from './components/ListaFuncionarios'
+import Nome from './components/Nome'
+import Formulario from './components/Formulario'
 
 export default function App() {
+  
+
   return (
     <div className="App">
       <h1> Fundamentos React </h1>
       <div className="Cards">
+        <Cartao>
+          <Formulario />
+        </Cartao>
+
+        <Cartao titulo="Oláaaaaaaaa">
+          <Nome />
+        </Cartao>
+
         <Cartao titulo="Primeiro componente React">
           <Primeiro />
         </Cartao>
