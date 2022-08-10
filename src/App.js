@@ -11,14 +11,17 @@ import Imagem from './images/06_113.jpg'
 import ListaFuncionarios from './components/ListaFuncionarios'
 import Nome from './components/Nome'
 import Formulario from './components/Formulario'
+import Tasks from './components/Tasks'
 
 export default function App() {
-  
-
   return (
     <div className="App">
       <h1> Fundamentos React </h1>
       <div className="Cards">
+        <Cartao titulo="Lista de Tarefas" color="grey">
+          <Tasks />
+        </Cartao>
+
         <Cartao>
           <Formulario />
         </Cartao>
